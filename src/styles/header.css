@@ -1,0 +1,49 @@
+header {
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  width: 100vw;
+  height: 65px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  padding: 0 20px; /* Added padding instead of fixed margin for flexibility */
+  box-sizing: border-box;
+}
+
+header img {
+  width: 31px;
+  height: 26px;
+}
+
+header h1 {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 20.75px;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  header {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  header img {
+    width: 24px;
+    height: 20px;
+    margin: 0; /* Remove fixed left margin */
+  }
+
+  header h1 {
+    font-size: 16px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap"); /* close match to Impact */
+
+.memeImage {
+  width: 535px;
+  /* border: 2px solid red; */
+  height: 280px;
+  /* object-fit: cover; */
+
+  border-radius: 2px;
+}
+
+.ImageBox {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.firstMeme {
+  top: 0;
+  position: absolute;
+  font-family: "Anton", Impact, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+
+  /* border: 2px solid #000000; */
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000;
+}
+
+.secondMeme {
+  position: absolute;
+  font-family: Impact;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #ffffff;
+  /* border: 2px solid #000000; */
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000;
+  bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .ImageBox {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .firstMeme,
+  .secondMeme {
+    font-size: 20px; /* Reduce text size for smaller screens */
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .firstMeme {
+    top: 5px;
+  }
+
+  .secondMeme {
+    bottom: 5px;
+  }
+
+  .memeImage {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+  }
+}
