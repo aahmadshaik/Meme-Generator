@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import html2canvas from "html2canvas";
+import html2canvas from "html2canvas/dist/html2canvas.min";
+
 import "../styles/userInput.css";
 import MemeImage from "./MemeImage";
 
